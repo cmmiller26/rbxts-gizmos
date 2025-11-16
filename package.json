@@ -1,0 +1,40 @@
+{
+	"name": "@rbxts/gizmos",
+	"version": "1.0.0",
+	"description": "TypeScript port of sg3cko's Gizmos library - Debug drawing utilities for Roblox including shapes, raycasts, paths, and world-space text.",
+	"main": "out/init.lua",
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [],
+	"author": "Colin Miller",
+	"license": "MIT",
+	"type": "commonjs",
+	"types": "out/index.d.ts",
+	"files": [
+		"out",
+		"!**/*.tsbuildinfo"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cmmiller26/rbxts-gizmos.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "^3.0.0-types.0",
+		"@rbxts/types": "^1.0.891",
+		"@typescript-eslint/eslint-plugin": "^8.46.4",
+		"@typescript-eslint/parser": "^8.46.4",
+		"eslint": "^9.39.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.4",
+		"eslint-plugin-roblox-ts": "^1.3.0",
+		"prettier": "^3.6.2",
+		"roblox-ts": "^3.0.0",
+		"typescript": "^5.9.3"
+	}
+}
