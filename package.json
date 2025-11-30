@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/gizmos",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "TypeScript port of sg3cko's Gizmos library - Debug drawing utilities for Roblox including shapes, raycasts, paths, and world-space text.",
 	"main": "out/init.lua",
 	"scripts": {

@@ -7,6 +7,7 @@ local trailers = {}
 
 local hitColor, missColor = 'green', 'red'
 
+Gizmos.enabled = true
 Gizmos.clear = true
 
 local colors = {
@@ -461,7 +462,22 @@ end
 findOrMakeGizmos()
 findOrMakeLabel()
 
+local previousEnabled = true
+
 local function Update(dt)
+	if not Gizmos.enabled then
+		if previousEnabled then
+			-- Just disabled, clear everything
+			wfh:Clear()
+			if label then
+				label.Text = ''
+			end
+			previousEnabled = false
+		end
+		commands = {}
+		return
+	end
+	previousEnabled = true
 	local t = tick()
 	if t ~= wfh:GetAttribute('lastUpdateTime') then
 		wfh:SetAttribute('lastUpdateTime', t)

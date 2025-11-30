@@ -9,6 +9,12 @@
 
 interface Gizmos {
 	/**
+	 * Whether gizmos are enabled and will be rendered
+	 * @default true
+	 */
+	enabled: boolean;
+
+	/**
 	 * Whether to automatically clear gizmos each frame
 	 * @default true
 	 */
