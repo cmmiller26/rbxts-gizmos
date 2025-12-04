@@ -1,14 +1,23 @@
 {
 	"name": "@rbxts/gizmos",
-	"version": "1.0.1",
-	"description": "TypeScript port of sg3cko's Gizmos library - Debug drawing utilities for Roblox including shapes, raycasts, paths, and world-space text.",
-	"main": "out/init.lua",
+	"version": "2.0.0",
+	"description": "Modern TypeScript debug visualization library for Roblox with Iris UI integration, custom groups, and per-gizmo configuration. Features shapes, raycasts, paths, and world-space text.",
+	"main": "out/init.luau",
 	"scripts": {
 		"build": "rbxtsc",
 		"watch": "rbxtsc -w",
 		"prepublishOnly": "npm run build"
 	},
-	"keywords": [],
+	"keywords": [
+		"roblox",
+		"rbxts",
+		"debug",
+		"visualization",
+		"gizmos",
+		"drawing",
+		"raycast",
+		"ui"
+	],
 	"author": "Colin Miller",
 	"license": "MIT",
 	"type": "commonjs",
@@ -36,5 +45,8 @@
 		"prettier": "^3.6.2",
 		"roblox-ts": "^3.0.0",
 		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@rbxts/iris": "^2.3.1-ts.1"
 	}
 }
